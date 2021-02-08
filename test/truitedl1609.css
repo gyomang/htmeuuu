@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+body {margin:0px; background-image:url(img/fondvert.gif); padding-top:0px; padding-bottom:0px
+	
+	}
+	
+@font-face {
+  font-family: 'goudy_bookletter_1911regular';
+   src: url('fonts/goudybookletter1911-webfont.woff2') format('woff2'),
+         url('fonts/goudybookletter1911-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+	
+@font-face {
+  font-family: 'agencyfbbold';
+   src: url('fonts/agencyfb-bold-webfont.woff2') format('woff2'),
+         url('fonts/agencyfb-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+h2
+{
+	font-family: 'agencyfbbold', sans-serif;
+	font-size: 1.8em;
+	padding-left: 15px;
+}
+	
+/* enveloppe de l'interfface centrée */ 	
+#global { 
+width:980px;
+margin-left:auto; 
+margin-right:auto; 
+background-color:#CBD888;
+margin-top:0px;
+margin-bottom:0px; 
+position:relative;
+top:0px;
+}
+
+/* en tête ou header de l'interface */ 
+#entete {
+position:relative;	
+width:980px; 
+height:196px;
+	
+	}
+
+#logo {
+	
+	position:absolute;
+	
+	}
+#banniere { position:absolute; left:335px;top:0px
+	
+	}	
+
+
+/* partie centrale 2 colonne */
+	
+#central{
+	position:relative; 
+	width:980px; 
+	background-color:#300; 
+	background-color:#663333;
+	margin:0px;}
+
+
+	
+/* navigation de la colonne de gauche */	
+#navigation { 
+position:absolute; 
+top:0px; 
+left:0px; 
+width:200px;
+padding: 10px;
+}
+ 
+#navigation  ul{ list-style-type:none;
+	}
+#navigation  a:link {color:#FFF; text-decoration:none; }
+#navigation  a:hover { color:#FFF; text-decoration:underline;
+	}
+	#navigation  a:active { color:red; text-decoration:underline;
+	}
+#navigation  a:visited { color:red; text-decoration:underline;
+	}	
+
+
+/* partie aside de l'interface cartouche de droite */
+
+#secondaire{ float: right; background-color:#633; padding: 20px; border-radius:10px}
+
+#secondaire  ul{ list-style-type:none;
+	}
+#secondaire  a:link {color:#FFF; text-decoration:none; }
+#secondaire  a:hover { color:#FFF; text-decoration:underline;
+	}		
+	
+#secondaire  a:active { color:red; text-decoration:underline;
+	}
+#secondaire  a:visited { color:red; text-decoration:underline;
+	}	
+
+/* gestion  partie centrale */
+#principal{position:relative; 
+width:780px; 
+left:200px; 
+background-color:#CBD888; 
+margin-bottom:0px;}
+#principal p{
+	font-family:'goudy_bookletter_1911regular',sans-serif;
+	width:580px; 
+	text-align:justify; 
+	padding:10px 20px
+    font-size:1em;
+
+    font-style:normal;
+
+}
+
+#principal h1 {padding:10px 20px;
+font-family:'Indie flower',cursive;
+font-weight:700;
+font-style:normal;
+font-size:2em;
+
+}
+img[title=ornans]{
+	 float:left;margin-right:20px;
+	margin-bottom:20px;
+	box-shadow: 6px 6px 5px #0A230A;
+	-webkit-box-shadow: 6px 6px 5px #0A230A;
+	-moz-box-shadow: 6px 6px 5px #0A230A;
+	-ms-box-shadow: 6px 6px 5px #0A230A;}
+img[title=ornans]:hover
+{   float:left;margin-right:20px;
+	margin-bottom:20px;
+	transition-duration:500ms;
+	transition-property:all; 
+	box-shadow: 6px 6px 15px #0A230A;
+	-webkit-box-shadow: 6px 6px 15px #0A230A;
+	-moz-box-shadow: 6px 6px 15px #0A230A;
+	-ms-box-shadow: 6px 6px 15px #0A230A;
+	transform-origin: 50% 50%;
+	transform : scale(1.25);
+ }
+img[title=ornans]:not(hover)
+{   float:left;margin-right:20px;
+	margin-bottom:20px;
+	transition-duration:500ms;
+	transition-property:all; 
+	box-shadow: 6px 6px 5px #0A230A;
+	-webkit-box-shadow: 6px 6px 5px #0A230A;
+	-moz-box-shadow: 6px 6px 5px #0A230A;
+	-ms-box-shadow: 6px 6px 5px #0A230A;
+	transform-origin: 50% 50%;
+	transform : scale(1.0);
+ }
+/* gestion  image de la partie centrale */
+
+/*img[title] { float:left; margin-right:20px; box-shadow: 6px 6px 10px #000; margin-left:15px } */
+
+
+
+
+
+/* pied de page description */
+
+
+
+
+#pied { text-align:center; height:70px; background-color:#063; width:980px; margin-top:0px; color:#FFF; padding-top:10px; 
+ 
+	}
+#pied  p { margin:0px;}	
+#pied a:link { color:#FFF; text-decoration:none;
+	}
+#pied a:hover { color:#FFF; text-decoration:underline;
+	}		
+#pied a:visited { color:#FFF; text-decoration:underline;
+	}	

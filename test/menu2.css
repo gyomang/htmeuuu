@@ -1,0 +1,86 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+/*@font-face {
+  font-family: "chopin";
+  src: url("police/chopin-webfont.eot");
+  src: url("police/chopin-webfont.ttf") format("truetype"),
+  url("police/chopin-webfont.woff") format("woff"),
+  url("police/chopin-webfont.eot?#iefix") format("embedded-opentype"),
+  url("police/chopin-webfont.svg#chopinscriptregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+
+
+/*@font-face {
+	font-family:"goudybookletter1911";
+	src: url("fonts/goudybookletter1911-webfont.eot");
+	src: url("fonts/goudybookletter1911-webfont.svg") format("svg"),
+	url("fonts/goudybookletter1911-webfont.ttf") format ("truetype"),
+	url("fonts/goudybookletter1911-webfont.woff") format ("woff"),
+	url("fonts/goudybookletter1911-webfont.woff2") format ("woff2");
+}*/
+
+
+div#listmenu { position:absolute;
+top:200px;
+border-bottom:1px solid #063;
+border-top:1px solid #063;
+left:0px; width:100%; float:left; font-size:0.8em;
+background-color:#4FB234; /* couleur de fond */
+margin-top:0; /*provisoire */
+font-family: Arial, Geneva, sans-serif;
+z-index:10}
+
+#listmenu ul{ margin:0 0 0 120px;}
+#listmenu li {float:left;
+position:relative; 
+list-style-type:none;	
+background-color:#008000; 
+border-right:1px solid #ffffff; }	
+	
+#listmenu li:first-child {
+	border-left:1px solid #ffffff; /*premiÃƒÂ¨re ligne verticale pour le menu */
+	}	
+#listmenu li:hover { 
+	background-color:#4FB234; /*changement de couleur sur le menu principal*/
+	}
+	
+	
+#listmenu a {
+	display:block; /*Balise lien en propriÃƒÂ©tÃƒÂ© block*/
+	padding:0 6px; /*Espace de chaque cotÃƒÂ© pour chaque menu */
+	text-decoration:none;	 /* suppression du soulignement */
+	font-weight: bold;
+	color:#ffffff;	
+	}
+	
+	
+#listmenu a:hover{ 
+color:#73FF4B;}
+
+
+#listmenu ul li ul{ position:absolute; margin:0; width:120px; left:-40px}
+#listmenu ul li ul li {
+	width:100%; /* remplissage par les items de la liste conteneur (ul) */
+	border-left:1px solid #ffffff; /* trois cotÃ©s de chaques items */
+	border-bottom:1px solid #ffffff;
+	border-right:1px solid #ffffff;
+	padding:3px 0 3px;
+	}
+	
+#listmenu ul li ul li:first-child {
+border-top:1px solid #ffffff; /*premier cotÃƒÂ©s du dessus*/
+}
+/*animation menus*/
+
+#listmenu ul li ul{	display:none;}   
+
+#listmenu ul li:hover ul{ display:block;} 
+#listmenu ul li ul li ul { float:right;}
+#listmenu ul li:hover ul li ul{display:none;}
+#listmenu ul li ul li:hover ul {display:block; position:absolute; top:0px; left:80px } 
+
