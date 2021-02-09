@@ -150,6 +150,23 @@
                 text-decoration: none;
             }
 
+            .imageons:active{
+                position: fixed;
+                top:0%;
+                left: 0%;
+                transform: translate(-50%, -50%);
+                width:90vw;
+                height:90vh;
+                transform: rotate(360deg);
+                border-radius:1000px;
+                border: 1rem solid #cbd888;
+            }
+            .imageons{
+                transition-duration: 1.5s;
+                transition-timing-function: ease;
+                border-radius:15px;
+            }
+
         </style>
     </head>
 
@@ -162,10 +179,10 @@
         <div id="listmenu" class="lol">
             <!--<input type="checkbox" class="bob" checked="checked">-->
             <ul id="main">
-                <li>
+                <li style="border-radius:0px 0px 0px 11px">
                     <a href="file:///C:/Users/Stagiaire/Documents/html/front2%20prof/index.html">lol0</a>
                     <ul>
-                        <li><a href="file:///C:/Users/Stagiaire/Documents/html/front2%20prof/index.html">lol01</a>
+                        <li ><a href="file:///C:/Users/Stagiaire/Documents/html/front2%20prof/index.html">lol01</a>
                             <ul>
                                 <li><a href="file:///C:/Users/Stagiaire/Documents/html/front2%20prof/index.html">lol010</a></li>
                                 <li><a href="file:///C:/Users/Stagiaire/Documents/html/front2%20prof/index.html">lol012</a></li>
@@ -199,7 +216,7 @@
                     </ul>
                 </li>
 
-                <li>
+                <li style="border-radius:0px 0px 11px 0px">
                     <a href="file:///C:/Users/Stagiaire/Documents/html/front2%20prof/index.html">lol5</a>
                     <ul>
                         <li><a href="file:///C:/Users/Stagiaire/Documents/html/front2%20prof/index.html">lol51</a></li>
@@ -229,7 +246,7 @@
                 <div><h1>Visiter la Venise de Franche-Compte</h1></div>
 
                 <div>
-                    <img  src="img/Ornans2.jpg" style="float: left;margin: 15px;">
+                    <img  src="img/Ornans2.jpg" style="float: left;margin: 15px;" class="imageons">
 
                     <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
