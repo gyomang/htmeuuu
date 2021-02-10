@@ -150,7 +150,7 @@
                 text-decoration: none;
             }
 
-            .imageons:active{
+            .imageons:hover{
                 position: fixed;
                 top:0%;
                 left: 0%;
@@ -165,8 +165,85 @@
                 transition-duration: 1.5s;
                 transition-timing-function: ease;
                 border-radius:15px;
+                float: left;
+                margin: 15px;
+            }
+            .imageons:hover{
+                animation-duration: 3s;
+                animation-name: powlol;
+                animation-iteration-count:infinite;
+                animation-fill-mode:backwards;
+            }
+            @keyframes powlol{
+                25%{
+                    transform: rotate(370deg);
+                    width:80vw;
+                    height:80vh;
+                    top:5%;
+                    left: 5%;
+                }
+                50%{
+                    transform: rotate(360deg);
+                    width:90vw;
+                    height:90vh;
+                }
+                75%{
+                    transform: rotate(350deg);
+                    width:80vw;
+                    height:80vh;
+                    top:5%;
+                    left: 5%;
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
             }
 
+            .hello{
+                padding: 15px;
+                list-style: none;
+            }
+        </style>
+
+        <style>
+            @media screen and (max-width: 768px) {
+                * {
+                    margin:0px;
+                    padding:0px;
+                    overflow-x:hidden;
+                }
+
+                .overcenter{
+                    display: contents;
+                }
+
+                .hello{
+                    padding:1px;
+                }
+
+                #secondaire{
+                    padding:1px;
+                }
+
+                .imageons{
+                    margin:1px;
+                    width: 66vw;
+                }
+
+                .fiver{
+                    padding:1px;
+                }
+
+                h1{
+                    font-size: 28px;
+                }
+                a{
+                    font-size:11px;
+                }
+                #main li a{
+                    font-size:17px;
+                }
+            }
         </style>
     </head>
 
@@ -229,7 +306,7 @@
 
         <div class="third">
             <div id="navigation" class="fourth">
-                <ul style="padding: 15px;list-style: none;">
+                <ul class="hello" >
                     <li><a href="index.php">Accueil</a></li>
     
                     <li><a href="test.html">Membres</a></li>
@@ -245,8 +322,8 @@
 
                 <div><h1>Visiter la Venise de Franche-Compte</h1></div>
 
-                <div>
-                    <img  src="img/Ornans2.jpg" style="float: left;margin: 15px;" class="imageons">
+                <div class="overcenter">
+                    <img  src="img/Ornans2.jpg" class="imageons">
 
                     <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
@@ -290,13 +367,16 @@
 
         <div style="background-color:#cbd888;height: 33px;"></div>
 
-        <div style="background-color:#097c17;margin: 100px;text-align: center;">
+        <div style="background-color:#097c17;/*margin: 100px;*/text-align: center;">
             <p>
-                Copyright © 2010. pied de page
+                Copyright GUENFANTOM© 2010. pied de page
                 <br/>
                 <a href="">Privacy Policy</a>
                 <a href="">Terms Of Use</a>
             </p>
+
+            <img src="img/photofunky.gif">
+            <p>what else</p>
         </div>
     </body>
 </html>
