@@ -16,6 +16,12 @@ body{
     grid-template-rows: repeat(4,auto);
 }
 
+@media screen and (max-width: 1555px){
+    img{
+        width:100px;
+    }
+}
+
 .menu{
     /*grid-column-start:2;
     grid-column-end: 5; */
