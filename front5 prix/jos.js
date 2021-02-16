@@ -1,23 +1,24 @@
 var monbutton=document.querySelector("#quanti1");
 monbutton.addEventListener("keyup",function(){
     afficherPrix1();
+    afficherTotal();
 });
 var monbutton=document.querySelector("#prixuni1");
 monbutton.addEventListener("keyup",function(){
     afficherPrix1();
+    afficherTotal();
 });
-
-
 
 var monbutton=document.querySelector("#quanti2");
 monbutton.addEventListener("keyup",function(){
     afficherPrix2();
+    afficherTotal();
 });
 var monbutton=document.querySelector("#prixuni2");
 monbutton.addEventListener("keyup",function(){
     afficherPrix2();
+    afficherTotal();
 });
-
 
 
 function afficherPrix1(){
@@ -34,7 +35,14 @@ function afficherPrix2(){
     
     document.querySelector("#prix2").value=result;
 }
+
 function afficherTotal() {
-    quanti2 = document.querySelector("#prix1").value;
-    prixuni2 = document.querySelector("#prix2").value;
+    prix1 = document.querySelector("#prix1").value;
+    prix2 = document.querySelector("#prix2").value;
+
+    if (prix1 == "") { prix1=0; };
+    if (prix2 == "") { prix2=0; };
+    result = parseInt(prix1)+parseInt(prix2);
+
+    document.querySelector("#final").value=result;
 }
