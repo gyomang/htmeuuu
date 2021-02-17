@@ -1,21 +1,21 @@
 var monbutton=document.querySelector("#quanti1");
-monbutton.addEventListener("keyup",function(){
+monbutton.addEventListener("input",function(){
     afficherPrix1();
     afficherTotal();
 });
 var monbutton=document.querySelector("#prixuni1");
-monbutton.addEventListener("keyup",function(){
+monbutton.addEventListener("input",function(){
     afficherPrix1();
     afficherTotal();
 });
 
 var monbutton=document.querySelector("#quanti2");
-monbutton.addEventListener("keyup",function(){
+monbutton.addEventListener("input",function(){
     afficherPrix2();
     afficherTotal();
 });
 var monbutton=document.querySelector("#prixuni2");
-monbutton.addEventListener("keyup",function(){
+monbutton.addEventListener("input",function(){
     afficherPrix2();
     afficherTotal();
 });
