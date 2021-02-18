@@ -13,23 +13,29 @@ function color(){
         rvb3="00";
     }
 
-    document.body.style.backgroundColor = "rgb("+rvb1+","+rvb2+","+rvb3+")";
+    document.body.style.backgroundColor = "#"+rvb1+rvb2+rvb3;
 }
 
 var monform=document.querySelector("#rvb1");
 monform.addEventListener("keyup",function(){
-    color();
-    control1();
+    lol=control1();
+    if (lol=="lol") {
+        color();
+    }
 });
 var monform=document.querySelector("#rvb2");
 monform.addEventListener("keyup",function(){
-    color();
-    control2();
+    lol=control2();
+    if (lol=="lol") {
+        color();
+    }
 });
 var monform=document.querySelector("#rvb3");
 monform.addEventListener("keyup",function(){
-    color();
-    control3();
+    lol=control3();
+    if (lol=="lol") {
+        color();
+    }
 });
 
 
@@ -37,9 +43,9 @@ monform.addEventListener("keyup",function(){
 
 
 function integr1(){
-    document.querySelector("#rvb1").value="255";
-    document.querySelector("#rvb2").value="0";
-    document.querySelector("#rvb3").value="0";
+    document.querySelector("#rvb1").value="FF";
+    document.querySelector("#rvb2").value="00";
+    document.querySelector("#rvb3").value="00";
 }
 function colored(){
     document.body.style.backgroundColor = "red";
@@ -53,9 +59,9 @@ monbut.addEventListener("click",function(){
 });
 
 function integr2(){
-    document.querySelector("#rvb1").value="0";
-    document.querySelector("#rvb2").value="128";
-    document.querySelector("#rvb3").value="0";
+    document.querySelector("#rvb1").value="00";
+    document.querySelector("#rvb2").value="FF";
+    document.querySelector("#rvb3").value="00";
 }
 function colorvert(){
     document.body.style.backgroundColor = "green";
@@ -68,9 +74,9 @@ monbut.addEventListener("click",function(){
 });
 
 function integr3(){
-    document.querySelector("#rvb1").value="0";
-    document.querySelector("#rvb2").value="0";
-    document.querySelector("#rvb3").value="255";
+    document.querySelector("#rvb1").value="00";
+    document.querySelector("#rvb2").value="00";
+    document.querySelector("#rvb3").value="FF";
 }
 function colorblue(){
     document.body.style.backgroundColor = "blue";
@@ -89,27 +95,30 @@ monbut.addEventListener("click",function(){
 
 function control1(){
     rvb1 = document.querySelector("#rvb1").value;
-    regex=/^([0-9]){1,3}$/;
+    regex=/^([0-9A-F]){2}$/;
     if (rvb1.match(regex)) {
         document.querySelector("#rvb1").style.backgroundColor = "#8bc34a";
+        return "lol";
     }else{
         document.querySelector("#rvb1").style.backgroundColor = "#e05282";
     }
 }
 function control2(){
     rvb1 = document.querySelector("#rvb2").value;
-    regex=/^([0-9]){1,3}$/;
+    regex=/^([0-9A-F]){2}$/;
     if (rvb1.match(regex)) {
         document.querySelector("#rvb2").style.backgroundColor = "#8bc34a";
+        return "lol";
     }else{
         document.querySelector("#rvb2").style.backgroundColor = "#e05282";
     }
 }
 function control3(){
     rvb1 = document.querySelector("#rvb3").value;
-    regex=/^([0-9]){1,3}$/;
+    regex=/^([0-9A-F]){2}$/;
     if (rvb1.match(regex)) {
         document.querySelector("#rvb3").style.backgroundColor = "#8bc34a";
+        return "lol";
     }else{
         document.querySelector("#rvb3").style.backgroundColor = "#e05282";
     }
