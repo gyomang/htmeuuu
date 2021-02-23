@@ -43,12 +43,12 @@ monform.addEventListener("keyup",function(){
 
 
 function integr1(){
-    document.querySelector("#rvb1").value="FF";
+    document.querySelector("#rvb1").value="A7";
     document.querySelector("#rvb2").value="00";
     document.querySelector("#rvb3").value="00";
 }
 function colored(){
-    document.body.style.backgroundColor = "red";
+    document.body.style.backgroundColor = "#A70000";
 
 }
 var monbut=document.querySelector("#color1");
@@ -60,7 +60,7 @@ monbut.addEventListener("click",function(){
 
 function integr2(){
     document.querySelector("#rvb1").value="00";
-    document.querySelector("#rvb2").value="FF";
+    document.querySelector("#rvb2").value="80";
     document.querySelector("#rvb3").value="00";
 }
 function colorvert(){
@@ -76,10 +76,10 @@ monbut.addEventListener("click",function(){
 function integr3(){
     document.querySelector("#rvb1").value="00";
     document.querySelector("#rvb2").value="00";
-    document.querySelector("#rvb3").value="FF";
+    document.querySelector("#rvb3").value="94";
 }
 function colorblue(){
-    document.body.style.backgroundColor = "blue";
+    document.body.style.backgroundColor = "#000094";
 }
 var monbut=document.querySelector("#color3");
 monbut.addEventListener("click",function(){
