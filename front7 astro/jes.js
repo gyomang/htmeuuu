@@ -6,5 +6,22 @@ monform.addEventListener("click",function(){
 function sel1(){
     nom=document.querySelector("#NomUtilisateur").value;
     nom=nom.toUpperCase();
-    alert(nom);
+    nom=nums(nom);
+}
+
+function nums(nom){
+    
+    tabnom=nom.split('');
+    
+    tabchif=[];
+    lettre='a';
+    alert(lettre);
+    console.log(lettre);
+    for (let index = 0; index < 26; index++) {
+        alert(index);
+        tabchif[index]=lettre
+        lettre++;
+        alert(lettre);
+        console.log(lettre);
+    }
 }

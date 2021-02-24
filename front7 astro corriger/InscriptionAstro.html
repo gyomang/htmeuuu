@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inscription</title>
+
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header>
+        <h1>Incription sur site de rencontre</h1>
+        <h2>form inscription</h2>
+        <nav>menu</nav>
+    </header>
+
+    <main>
+        <form action="Acceuil.html" methode="GET" enctype="text/plain">
+            <fieldset>
+                <legend>inscription</legend>
+
+                <label for="nom">nom</label>
+                <input type="text" id="nom" name="nom">
+
+                <br><br>
+
+                <label for="prenom">prenom</label>
+                <input type="text" id="prenom" name="prenom">
+
+                <br><br>
+
+                <label for="jour" id="lbldate">Date de naissance</label>
+                <div id="anniv">
+                    <select name="jour" id="jour">
+                        <option value="0">jour</option>
+                    </select>
+
+                    <select name="mois" id="mois">
+                        <option value="0">mois</option>
+                    </select>
+
+                    <select name="annee" id="annee">
+                        <option value="0">annee</option>
+                    </select>
+                </div>
+
+                <br><br>
+
+                <input type="text" name="pseudo" id="pseudo" readonly="readonly" placeholder="pse">
+                
+                <br><br>
+
+                <textarea name="com" id="com" placeholder="com" maxlength="200" cols="30" rows="10"></textarea>
+
+                <br><br>
+                
+                <input type="submit" value="confirm">
+                <input type="reset" value="remise a zero">
+
+
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+header{
+    text-align: center;
+}
+
+nav{
+    float:left;
+}
+
+main{
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5d9f4;
+    border-radius: 12px;
+    border: 1px solid #ff00ff;
+    padding:50px;
+}
+
+fieldset{
+    color:whitesmoke;
+    border-radius: 12px; 
+}
+
+legend{
+    color:whitesmoke;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 7px black
+}
+
+label{
+    display:inline-block;
+    color:black;
+}
+
+#anniv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
