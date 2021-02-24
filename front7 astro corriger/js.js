@@ -11,11 +11,13 @@ function affichejour(){
 
 affichejour();
 
-function affichemois(){   
+function affichemois(){
+    var fruits = ['Banana','janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre', 'Banana'];
+
     for (let index = 1; index <= 12; index++) {
         var uneoption = document.createElement("option");
     
-        uneoption.text=index;
+        uneoption.text=fruits[index];
         uneoption.setAttribute("value",index);
 
         document.querySelector("#mois").appendChild(uneoption);
