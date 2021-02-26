@@ -19,6 +19,7 @@ function affichemois(){
     
         uneoption.text=fruits[index];
         uneoption.setAttribute("value",index);
+        uneoption.setAttribute("class","loul");
 
         document.querySelector("#mois").appendChild(uneoption);
     }
@@ -38,3 +39,35 @@ function afficheannee(){
 }
 
 afficheannee();
+
+
+
+function valNum(machaine){
+    machaine=machaine.toUpperCase();
+    var nb =0;
+    for (let i = 0; i < machaine.length; i++) {
+        let maval=machaine.charCodeAt(i)-64;
+        nb+=maval;
+    }
+    return nb;
+}
+/*document.querySelector("#pseudo").value=valNum("gyom");*/
+
+var monform=document.querySelector("#nom");
+monform.addEventListener("keyup",function(){
+    document.querySelector("#pseudo").value=valNum(monform.value);
+});
+
+
+
+
+
+var monform=document.querySelector("#mois");
+monform.addEventListener("change",function(){
+    afficherSigne(monform.value);
+});
+
+function afficherSigne(val){
+    var signe = ["slip","Verseau","Poisson","Belier","Taureau","Gémeaux","Cancer","Lion","Vierge","Balance","Scor pion","Sagittaire","Capricorne","Verseau"] ;
+    alert("Vous etes un ou une "+signe[val]);
+}
